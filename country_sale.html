@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div class="main--site--wrapper">
+		<header class="b-header__sticked clearfix tac">
+			<div class="container">
+				<div class="b-header__logo left">
+					<a href="index.html" class="b-header__the-logo dib"></a>
+				</div>
+				<div class="b-header__right-side right">
+					<div class="b-header__search-icon dib" data-call-search-form></div>
+					<div class="b-header__menu-icon dib"></div>
+				</div>
+				<div class="b-header__phone-wrapper dib">
+					<a class="b-header__phone" href="tel:+74959560798">+7 (495) 956-07-98</a>
+				</div>
+			</div>
+			<div class="drop--down--menu hidden">
+				<ul class="tal">
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="index.html">Главная страница</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="countries.html">Страны и отели</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="bonuses.html">Бонусы и скидки</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="contacts.html">Контакты</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="#" data-call-popup="contact--form"><span class="icon dib icon--callus"></span> Заказать звонок</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- BEGIN b-resort__top-navigation -->
+		<div class="b-resort__top-navigation section padding-15 light_gray-bg">
+			<div class="container">
+				<a href="#" class="white_btn left">&larr; Назад</a> <span class="fz16 b-the_resort--resort_name">Маврикий, Бонусы и Скидки</span>
+			</div>
+		</div>
+		<!-- // END b-resort__top-navigation -->
+
+		<div class="b-hotels__search-form">
+			<div class="container">
+				<form action="#">
+					<div class="form-line clearfix data-pickers--main_wrapper">
+						<div class="left w50 pr10">
+							<!-- BEGIN b-date-picker__wrapper -->
+							<div class="b-date-picker__wrapper">
+								<p class="date-picker__title">Дата заезда</p>
+								<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+								<span class="date--picker--arrow"></span>
+							</div>
+							<!-- // END b-date-picker__wrapper -->
+						</div>
+						<div class="right w50 pl10">
+							<!-- BEGIN b-date-picker__wrapper -->
+							<div class="b-date-picker__wrapper">
+								<p class="date-picker__title">Дата выезда</p>
+								<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+								<span class="date--picker--arrow"></span>
+							</div>
+							<!-- // END b-date-picker__wrapper -->
+						</div>
+					</div>
+					<div class="form-line--datepicker--wrapper">
+						<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+						<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+					</div>
+					<div class="form-line">
+						<div class="search--form--toggle-link fz17 active" data-toggle-link="search--filters">
+							<span class="search--form--toggle-link--the_text">Выберите курорты</span>
+							<span class="white--arrow--icon dib icon"></span>
+						</div>
+
+						<div class="search--form--toggle--content--checkbox--filters" data-toggle-block="search--filters">
+							<p class="margin-bottom15">
+								<label>
+									<input type="checkbox" class="hidden">
+									<span class="checkbox--button"></span>
+									Все
+								</label>
+							</p>
+							<p class="margin-bottom15">
+								<label>
+									<input type="checkbox" class="hidden">
+									<span class="checkbox--button"></span>
+									Котеджи (5)
+								</label>
+							</p>
+							<p class="margin-bottom15">
+								<label>
+									<input type="checkbox" class="hidden">
+									<span class="checkbox--button"></span>
+									Гостиницы (3)
+								</label>
+							</p>
+							<p class="margin-bottom15">
+								<label>
+									<input type="checkbox" class="hidden">
+									<span class="checkbox--button"></span>
+									Пляжный отдых (3)
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox" class="hidden">
+									<span class="checkbox--button"></span>
+									Горный отдых (3)
+								</label>
+							</p>
+						</div>
+					</div>
+					<div class="form-line">
+						<button type="submit" class="blue_btn db">Показать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- BEGIN b-country--discounts--listing -->
+		<div class="b-country--discounts--listing section padding-10">
+			<div class="container">
+				<div class="country--discounts--listing--item section padding-10">
+					<div class="search-result__listing__item hotels clearfix no--border-bottom no--padding--bottom margin-bottom15">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image hotels" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom5">
+								<a href="hotel.html" class="search-result__listing__title-link">Hotel Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__star-raiting margin-bottom10">
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star inactive"></span>
+							</p>
+							<p class="tar ovh">
+								<span class="left line-height--normal search-result__number-of-photos">Мальдивы</span>
+							</p>
+						</div>
+					</div>
+					<div class="discount--block-wrapper">
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title red">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="country--discounts--listing--item section padding-10">
+					<div class="search-result__listing__item hotels clearfix no--border-bottom no--padding--bottom margin-bottom15 margin-bottom15">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image hotels" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom5">
+								<a href="hotel.html" class="search-result__listing__title-link">Hotel Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__star-raiting margin-bottom10">
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star inactive"></span>
+							</p>
+							<p class="tar ovh">
+								<span class="left line-height--normal search-result__number-of-photos">Мальдивы</span>
+							</p>
+						</div>
+					</div>
+					<div class="discount--block-wrapper">
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title red">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="country--discounts--listing--item section padding-10">
+					<div class="search-result__listing__item hotels clearfix no--border-bottom no--padding--bottom margin-bottom15">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image hotels" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom5">
+								<a href="hotel.html" class="search-result__listing__title-link">Hotel Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__star-raiting margin-bottom10">
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star inactive"></span>
+							</p>
+							<p class="tar ovh">
+								<span class="left line-height--normal search-result__number-of-photos">Мальдивы</span>
+							</p>
+						</div>
+					</div>
+					<div class="discount--block-wrapper">
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title red">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="country--discounts--listing--item section padding-10">
+					<div class="search-result__listing__item hotels clearfix no--border-bottom no--padding--bottom margin-bottom15">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image hotels" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom5">
+								<a href="hotel.html" class="search-result__listing__title-link">Hotel Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__star-raiting margin-bottom10">
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star inactive"></span>
+							</p>
+							<p class="tar ovh">
+								<span class="left line-height--normal search-result__number-of-photos">Мальдивы</span>
+							</p>
+						</div>
+					</div>
+					<div class="discount--block-wrapper">
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title red">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="country--discounts--listing--item section padding-10">
+					<div class="search-result__listing__item hotels clearfix no--border-bottom no--padding--bottom margin-bottom15">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image hotels" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom5">
+								<a href="hotel.html" class="search-result__listing__title-link">Hotel Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__star-raiting margin-bottom10">
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star active"></span>
+								<span class="icon icon-star inactive"></span>
+							</p>
+							<p class="tar ovh">
+								<span class="left line-height--normal search-result__number-of-photos">Мальдивы</span>
+							</p>
+						</div>
+					</div>
+					<div class="discount--block-wrapper">
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title red">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="discount--visible--item">
+							<div class="discount--visible--content toggle--siblings--hidden">
+								<p class="discount--visible--content--title">
+									Скидка 20% при раннем бронировании
+								</p>
+								<p class="dicount--visible--content--date fz12">
+									с 01.11.2015 по 31.10.2016
+								</p>
+							</div>
+							<div class="discount--hidden-content hidden">
+								<p>Если количество ночей проживания 4 или более, если количество ночей проживания не более 6 учитывая следующие ограничения:</p>
+								<ul class="ffm discount--hidden--listing">
+									<li class="discount--hidden--listing--item">не действует для номера Presidential Suite Sanctuary</li>
+								</ul>
+								<p class="margin-bottom15">при бронировании 4 ночей 1 ночь предоставляется бесплатно</p>
+
+								<div class="b-hotels__search-form form--remove--side--paddings remove--bottom--padding">
+									<div class="container">
+										<form action="#">
+											<div class="form-line clearfix data-pickers--main_wrapper">
+												<div class="left w50 pr10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата заезда</p>
+														<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+												<div class="right w50 pl10">
+													<!-- BEGIN b-date-picker__wrapper -->
+													<div class="b-date-picker__wrapper">
+														<p class="date-picker__title">Дата выезда</p>
+														<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+														<span class="date--picker--arrow"></span>
+													</div>
+													<!-- // END b-date-picker__wrapper -->
+												</div>
+											</div>
+											<div class="form-line--datepicker--wrapper">
+												<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+												<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+											</div>
+											<div class="form-line">
+												<button type="submit" class="blue_btn db">Проверить наличие мест</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // END b-country--discounts--listing -->
+
+		<!-- BEGIN footer -->
+		<footer class="b-footer tac">
+			<div class="container">
+				<p>
+					Copyright © 2002 — 2016 <br>
+					Туристическая компания «Люкс Тур»<br>
+					Телефон: <a class="white_link tdn" href="tel:tel:+74959560798">+7 (495) 956-07-98</a>,<br>
+					e-mail: <a class="white_link tdn" href="mailto:info@luxe.ru">info@luxe.ru</a>
+				</p>
+				
+				<div class="footer__full-version__wrapper"><a href="#" class="white_link tdu">Полная версия сайта</a></div>
+				 
+				<p>
+					Материалы сайта www.luxe.ru не могут быть<br>
+					использованы полностью или частично без<br> письменного разрешения компании «Люкс Тур»
+				</p>
+			</div>
+		</footer>
+		<!-- // END footer -->
+	</div>
+
+	<div class="popup">
+		<table class="popup--main--table">
+			<td class="tac vam">
+				<div class="container">
+					<div class="popup--success" data-popup="popup--success">
+						<div class="popup--title fz16">Ваш запрос отправлен!</div>
+						<div class="popup--content">В ближайшее время с Вами свяжется наш менеджер</div>
+					</div>
+					<div class="popup--error" data-popup="popup--error">
+						<div class="popup--title fz16">Ошибка сервиса!</div>
+						<div class="popup--content">К сожалению что-то пошло не так, попробуйте повторить запрос позднее</div>
+					</div>
+					<div class="popup--contact--form" data-popup="contact--form">
+						<div class="close--popup"></div>
+						<div class="b-contact_form dark_bg">
+							<div class="container">
+								<p class="dark_bg--block__title">Введите свои контактные данные</p>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="Имя" type="text">
+								</div>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="+7 (___) ___-__-__" data-inputmask="" type="tel">
+								</div>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="Email" type="email">
+								</div>
+								<div>
+									<button type="submit" class="blue_btn db">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</td>
+		</table>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/input.mask.js"></script>
+	<script src="js/datepicker.custom.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	
+	<script>
+		$(function(){
+			$('.country--filter--tabs--units').owlCarousel({
+				items: 3,
+				nav: true
+			})
+		})
+	</script>	
+</body>
+</html>

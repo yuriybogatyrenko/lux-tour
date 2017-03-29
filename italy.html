@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div class="main--site--wrapper">
+		<header class="b-header__sticked clearfix tac">
+			<div class="container">
+				<div class="b-header__logo left">
+					<a href="index.html" class="b-header__the-logo dib"></a>
+				</div>
+				<div class="b-header__right-side right">
+					<div class="b-header__search-icon dib" data-call-search-form></div>
+					<div class="b-header__menu-icon dib"></div>
+				</div>
+				<div class="b-header__phone-wrapper dib">
+					<a class="b-header__phone" href="tel:+74959560798">+7 (495) 956-07-98</a>
+				</div>
+			</div>
+			<div class="drop--down--menu hidden">
+				<ul class="tal">
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="index.html">Главная страница</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="countries.html">Страны и отели</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="bonuses.html">Бонусы и скидки</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="contacts.html">Контакты</a></li>
+					<li class="drop--down--menu--item container"><a class="drop--down--menu--link" href="#" data-call-popup="contact--form"><span class="icon dib icon--callus"></span> Заказать звонок</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class="b-hotels__search-form result--form__step3">
+			<div class="container">
+				<div class="will--be--hidden--on--click--and--call_form">
+					<p class="search-form__resort-title margin-bottom10"><span class="icon icon-marker dib search-form__resort-title--marker"></span> Мальдивы</p>
+					<p class="search-form__order-days__range"><span class="icon icon-calendar-blue dib search-form__resort-title--calendar"></span> Заезд 11 Фев 2016 &mdash; Выезд 12 Фев 2016</p>
+				</div>
+				<div class="hidden additional--search--form--on--calling" data-hidden--form>
+					<div class="b-hotels__search-form__title">Поиск отелей</div>
+					<form action="search.html">
+						<div class="form-line">
+							<div class="search_with--autocomplete">
+								<input type="text" placeholder="Название отеля, города, курорта" class="search--form--text_input hotels--search autocomplete--search--input">
+								<span class="search--form--text_input--location_icon"></span>
+								<span class="input--clean_field"></span>
+							</div>
+						</div>
+						<div class="form-line clearfix data-pickers--main_wrapper">
+							<div class="left w50 pr10">
+								<!-- BEGIN b-date-picker__wrapper -->
+								<div class="b-date-picker__wrapper">
+									<p class="date-picker__title">Дата заезда</p>
+									<input readonly data-datepicker-input="input--start" class="date-picker__input date-picker--from" type="text">
+									<span class="date--picker--arrow"></span>
+								</div>
+								<!-- // END b-date-picker__wrapper -->
+							</div>
+							<div class="right w50 pl10">
+								<!-- BEGIN b-date-picker__wrapper -->
+								<div class="b-date-picker__wrapper">
+									<p class="date-picker__title">Дата выезда</p>
+									<input readonly data-datepicker-input="input--end" class="date-picker__input date-picker--to" type="text">
+									<span class="date--picker--arrow"></span>
+								</div>
+								<!-- // END b-date-picker__wrapper -->
+							</div>
+						</div>
+						<div class="form-line--datepicker--wrapper">
+							<div class="datepicker--start hidden" data-datepicker-target="input--start"></div>
+							<div class="datepicker--end hidden" data-datepicker-target="input--end"></div>
+						</div>
+						<div class="form-line">
+							<!-- BEGIN b-adults-number -->
+							<div class="b-adults-number">
+								<div class="icon icon-decrease adults-decrease"></div>
+								<input type="hidden" class="adults--input">
+								<span class="adults--number--text">1 взрослый</span>
+								<div class="icon icon-increase adults-increase"></div>
+							</div>
+							<!-- // END b-adults-number -->
+						</div>
+						<div class="form-line">
+							<div class="custom--select_style search--form--hotels">
+								<span class="custom--select_style--text"></span>
+								<span class="custom--select_tyle--trigger"></span>
+								<select data-placeholder="Добавить ребенка" class="change--children--pick" name="">
+									<option value="1">1 год</option>
+									<option value="2">2 года</option>
+									<option value="3">3 года</option>
+									<option value="4">4 года</option>
+									<option value="5">5 лет</option>
+									<option value="6">6 лет</option>
+									<option value="7">7 лет</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-line">
+							<button type="submit" class="blue_btn db">Найти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- BEGIN b-letters--navigations -->
+		<div class="b-letters--navigations section padding-10">
+			<div class="container">
+				<div class="b-letter--slider ttu">
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">А</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Б</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">В</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link letter--selected" href="#">Г</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Д</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Е</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ё</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ж</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">З</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">И</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Й</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">К</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Л</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">М</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Н</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">О</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">П</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Р</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">С</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Т</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">У</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ф</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Х</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ц</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ч</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ш</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Щ</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ъ				</a>
+					</div>	
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ы</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ь</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Э</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Ю</a>
+					</div>
+					<div class="b-letter--item">
+						<a class="b-letter--item_link" href="#">Я</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // END b-letters--navigations -->
+
+		<!-- BEGIN search-results__listing -->
+		<div class="search-results__listing">
+			<div class="container">
+				<div class="search-result__listing__units">
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort4">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort5">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort6">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="search-result__listing__item resort clearfix">
+						<a href="hotel.html" class="left search-result__listing--image_wrap">
+							<img alt="" src="http://placehold.it/64x64" class="search-result__listing--image resort" />
+						</a>
+						<div class="search-result__listing__details">
+							<p class="search-result__listing__title-wrap margin-bottom15">
+								<a href="hotel.html" class="search-result__listing__title-link">Equatorial Ho Chi Minh City</a>
+							</p>
+							<p class="search-result__listing__icons">
+								<span class="icon resort--icons-sprite icon-resort1">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort2">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+								<span class="icon resort--icons-sprite icon-resort3">
+									<span class="icon--tooltip">Описание иконки</span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // END search-results__listing -->
+		<!-- BEGIN pagination -->
+		<div class="pagination tac section padding-10 light_gray-bg">
+			<div class="container">
+				<div class="left"><a class="white_btn" href="#">Предыдущая</a></div>
+				<div class="right"><a class="white_btn" href="#">Следующая</a></div>
+				<div class="dib">1 из 15</div>
+			</div>
+		</div>
+		<!-- // END pagination -->
+		<!-- BEGIN footer -->
+		<footer class="b-footer tac">
+			<div class="container">
+				<p>
+					Copyright © 2002 — 2016 <br>
+					Туристическая компания «Люкс Тур»<br>
+					Телефон: <a class="white_link tdn" href="tel:tel:+74959560798">+7 (495) 956-07-98</a>,<br>
+					e-mail: <a class="white_link tdn" href="mailto:info@luxe.ru">info@luxe.ru</a>
+				</p>
+				
+				<div class="footer__full-version__wrapper"><a href="#" class="white_link tdu">Полная версия сайта</a></div>
+				 
+				<p>
+					Материалы сайта www.luxe.ru не могут быть<br>
+					использованы полностью или частично без<br> письменного разрешения компании «Люкс Тур»
+				</p>
+			</div>
+		</footer>
+		<!-- // END footer -->
+	</div>
+
+	<div class="popup">
+		<table class="popup--main--table">
+			<td class="tac vam">
+				<div class="container">
+					<div class="popup--success" data-popup="popup--success">
+						<div class="popup--title fz16">Ваш запрос отправлен!</div>
+						<div class="popup--content">В ближайшее время с Вами свяжется наш менеджер</div>
+					</div>
+					<div class="popup--error" data-popup="popup--error">
+						<div class="popup--title fz16">Ошибка сервиса!</div>
+						<div class="popup--content">К сожалению что-то пошло не так, попробуйте повторить запрос позднее</div>
+					</div>
+					<div class="popup--contact--form" data-popup="contact--form">
+						<div class="close--popup"></div>
+						<div class="b-contact_form dark_bg">
+							<div class="container">
+								<p class="dark_bg--block__title">Введите свои контактные данные</p>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="Имя" type="text">
+								</div>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="+7 (___) ___-__-__" data-inputmask="" type="tel">
+								</div>
+								<div class="form-line">
+									<input class="white__input-text" placeholder="Email" type="email">
+								</div>
+								<div>
+									<button type="submit" class="blue_btn db">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</td>
+		</table>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/input.mask.js"></script>
+	<script src="js/datepicker.custom.js"></script>
+	<script src="js/custom.js"></script>
+
+	<script>
+
+		$('.b-letter--slider').owlCarousel({
+			autoWidth: true,
+			margin: 5,
+			nav: true
+		})
+	</script>
+</body>
+</html>

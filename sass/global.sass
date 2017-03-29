@@ -1,0 +1,353 @@
+body, input, button, textarea
+	font-size: 14px
+	font-family: $ffr
+	color: #143040
+	line-height: 1.3
+
+	&:focus
+		outline: none
+
+.main--site--wrapper
+	min-width: 320px
+	max-width: 100%
+	overflow: hidden
+	padding-top: 55px
+
+.b-header__sticked
+	background-color: #ffffff
+	box-shadow: 0 2px 8px 0 rgba(20, 47, 64, 0.2)
+	line-height: 55px
+	vertical-align: middle
+	position: fixed
+	width: 100%
+	z-index: 51
+	top: 0
+
+.b-hotels__search-form
+	background: #143040
+	padding: 15px 0
+	color: #fff
+
+	&.form--remove--side--paddings
+		margin-left: -16px
+		margin-right: -16px
+
+	&.remove--bottom--padding
+		margin-bottom: -15px
+
+.b-header__the-logo
+	+sprite(logo)
+
+.b-header__search-icon
+	width: 25px
+	height: 25px
+	cursor: pointer
+	position: relative
+
+	&:after
+		content: ''
+		+sprite(search, $pos: "abs_middle")
+
+	&.active
+		&:after
+			display: none
+
+		&:before
+			content: ''
+			+sprite(close-menu, $pos: "abs_middle")
+
+.b-header__menu-icon
+	+sprite(icn-menu)
+	margin-left: 10px
+	cursor: pointer
+	position: relative
+
+	&:after
+		// +trans
+		display: block
+		opacity: 0
+		content: ''
+		width: 100%
+		height: 100%
+		background: #fff
+
+	&:before
+		display: block
+		content: ''
+		+sprite(close-menu, $pos: "abs_middle")
+		opacity: 0
+		// +trans
+
+	&.active
+		&:after
+			opacity: 1
+
+		&:before
+			opacity: 1
+
+
+.b-header__phone
+	border-radius: 6px
+	background-image: linear-gradient(to bottom, #ffffff, #eaf4f4)
+	border: solid 1px rgba(8, 25, 105, 0.1)
+	line-height: 31px
+	display: inline-block
+	vertical-align: middle
+	font-size: 17px
+	color: #27414f
+	text-decoration: none
+	padding: 0 10px
+
+.container
+	max-width: 768px
+	margin: 0 auto
+	padding-left: 15px
+	padding-right: 15px
+	box-sizing: border-box
+
+	&.no-paddings
+		padding-left: 0
+		padding-right: 0
+
+.left
+	float: left
+
+.right
+	float: right
+
+.clearfix
+	&:after
+		clear: both
+		display: table
+		content: ''
+
+.dib
+	display: inline-block
+	vertical-align: middle
+
+.db
+	display: block
+
+.vat
+	vertical-align: top
+
+.vam
+	vertical-align: middle
+
+.w100
+	width: 100%
+
+.ttu
+	text-transform: uppercase
+
+.tac
+	text-align: center
+
+.tar
+	text-align: right
+
+.tal
+	text-align: left
+
+.w50
+	width: 50%
+	box-sizing: border-box
+
+	&.dib
+		display: inline-block
+		vertical-align: middle
+		width: 49%
+
+.pr10
+	padding-right: 10px
+
+.pl10
+	padding-left: 10px
+
+.form-line
+	margin-bottom: 20px
+	position: relative
+
+	&:last-child
+		margin-bottom: 0
+
+.form-line--datepicker--wrapper
+	margin-bottom: 20px
+
+	&:last-child
+		margin-bottom: 0
+
+.blue_btn
+	background: #0099ff
+	border: none
+	cursor: pointer
+	color: #fff
+	font-size: 18px
+	line-height: 45px
+	border-radius: 6px
+	font-family: $ffm
+	margin: 0
+	padding: 0 20px
+	box-sizing: border-box
+	text-decoration: none
+	display: inline-block
+	vertical-align: middle
+
+	&.db
+		padding: 0
+		display: block
+		width: 100%
+
+	&:hover
+		opacity: 0.8
+
+	&.with-arrow
+		font-size: 12px
+		line-height: 35px
+		padding: 0 45px 0 25px
+		position: relative
+
+		&:after
+			content: ''
+			position: absolute
+			+sprite(shape-1)
+			top: 50%
+			right: 10px
+			margin-top: -4px
+			+trans
+
+		&.active
+			&:after
+				+transform(rotate(180deg))
+
+.ffr
+	font-family: $ffr
+
+.ffm
+	font-family: $ffm
+
+.ffl
+	font-family: $ffl
+
+.ffb
+	font-family: $ffb
+
+.section
+	&.padding-15
+		padding-top: 15px
+		padding-bottom: 15px
+
+	&.padding-20
+		padding-top: 20px
+		padding-bottom: 20px
+
+	&.padding-5
+		padding-top: 5px
+		padding-bottom: 5px
+
+	&.padding-10
+		padding-top: 10px
+		padding-bottom: 10px
+
+.green_btn
+	@extend .blue_btn
+	background: #12c85e
+
+.b-footer
+	color: #fff
+	background: #0b0d43
+	padding: 20px 0
+	font-size: 12px
+	line-height: 1.4
+	font-family: $ffl
+
+.white_link
+	color: #fff
+
+	&.tdu
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+	&.tdn
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+
+.footer__full-version__wrapper
+	margin: 15px 0
+
+.b-hotels__search-form__title
+	font-size: 18px
+	line-height: 1.1
+	margin-bottom: 15px
+
+.search_with--autocomplete
+	width: 100%
+	position: relative
+
+.search-choice-close
+	position: absolute
+	top: 50%
+	right: 20px
+	&:after
+		content: ''
+		+sprite(clear, $pos: "abs_middle")
+
+.b-date-picker__wrapper
+	position: relative
+	background: #fff
+	height: 40px
+	border-radius: 6px
+
+	&:after
+		position: absolute
+		content: ''
+		+sprite(rectangle-14)
+		top: 50%
+		right: 10px
+		margin-top: -5px
+
+.date-picker__title
+	position: absolute
+	top: 5px
+	left: 10px
+	font-size: 12px
+	color: #afafaf
+
+.date-picker__input
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	box-sizing: border-box
+	padding: 15px 35px 0 10px
+	height: 100%
+	background: transparent
+	border: none
+	z-index: 1
+
+	&:focus + .date--picker--arrow
+		position: absolute
+		top: 100%
+		left: 50%
+		margin-left: -5px
+		border: 10px solid transparent
+		border-top: 10px solid #fff
+		content: ''
+		display: block
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="email"], textarea
+	&.error
+		box-shadow: inset 0 0 5px 0 #f00
+
+	&.success
+		box-shadow: inset 0 0 5px 0 #0f0
+
+.b-success_message
+	color: #0f0
+	margin-top: 5px
+
+.b-error_message
+	color: #f00
+	margin-top: 5px
